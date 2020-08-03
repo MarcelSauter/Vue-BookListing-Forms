@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>{{title}}</h1>
+    <h1>{{ title }}</h1>
     <ul>
       <book-item v-for='book in books' :key='book.id' :book='book'></book-item>
     </ul>
@@ -21,7 +21,7 @@
 <script>
 import BookItem from "./BookItem";
 import BookForm from "./BookForm";
-import _ from 'lodash';
+import _ from "lodash";
 
 export default {
   name: "BookList",
