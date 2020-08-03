@@ -10,7 +10,7 @@
       <option v-for="filter in filters"> {{ filter }}</option>
     </select>
     <ul>
-      <book-item v-for="filteredBook in filteredBooks" v-bind:book="filteredBook"></book-item>
+      <book-item v-for="book in filteredBooks" v-bind:book="filteredBook"></book-item>
     </ul>
     <br>
     <hr />
